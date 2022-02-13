@@ -7,6 +7,15 @@ function d(b,c,d,e)
     a.fillStyle=b;a.beginPath();a.arc(c,d,e,0,2*m.PI,!0);a.fill();a.fillRect(c,d,1,1)
 }
 
+function draw_us()
+{
+    var image = new Image();
+    image.src = 'img/valentines.png';
+    image.onload = function () {
+        a.drawImage(image, 0 , 0, c.width, c.height);
+    };
+};
+
 m=Math;r=m.random;g=Date;l=+(new g);e=document;q=e.createElement("canvas");
 w=e.createElement("canvas");o={};h=100;H=200;
 v=window;t=c.width=v.innerWidth;u=c.height=v.innerHeight-5;
@@ -25,13 +34,3 @@ v.setInterval(function(){
     for(i=0;++i<H;)f=(n-l)/h,s=o[H+i],d("#FFA",s.x,s.y,m.floor(m.max(s.a+m.sin(s.c++/10)-.5,1))),z=o[i],
     a.drawImage(q,z.x+=-.1/(z.b/h)*f,z.y+=(5-z.b/10)*f,z.a,z.a),z.y>u&&(z.y=-h),z.x<-H&&(z.x=t);l=n
 },60);
-
-
-function draw_us()
-{
-    var image = new Image();
-    image.src = 'img/valentines.png';
-    image.onload = function () {
-        a.drawImage(image, 0 , 0, c.width, c.height);
-    };
-};
