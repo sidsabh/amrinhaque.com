@@ -18,7 +18,8 @@ q.width=q.height=h;w.width=1e3;w.height=H;
 
 for(j=0;++j<H;){
     for(i=0;1e3>++i;)a=q.getContext("2d"),z=.5-i/h,f=j/h-.5+.4*m.sqrt(m.abs(z)),f=z*z+2*f*f,
-    .23>f&&d(.16<f?"#F00":"#F88",i,j,0),a=w.getContext("2d"),d(j>5e-4*i*i-.3*i+h?"#343":j>4e-4*i*i-.9*i+500?"#232":"#000",i,j,0);
+    .23>f&&d(.16<f?"#F00":"#F88",i,j,0),a=w.getContext("2d"),
+    d(j>5e-4*i*i-.3*i+h?"#343":j>4e-4*i*i-.9*i+500?"#232":"#000",i,j,0); // hills
     o[j]={x:r()*t,y:-h-r()*u,b:51-j/4,a:25+.4*j};o[H+j]={x:r()*t,y:r()*u-H,a:3*r()+1,c:j}
 }
 a=k;
