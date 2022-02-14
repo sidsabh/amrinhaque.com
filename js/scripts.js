@@ -22,7 +22,7 @@ for(j=0;++j<H;){
     o[j]={x:r()*t,y:-h-r()*u,b:51-j/4,a:25+.4*j};o[H+j]={x:r()*t,y:r()*u-H,a:3*r()+1,c:j}
 }
 a=k;
-var image = new Image();image.src = 'img/valentines.png';
+var image = new Image();image.src = 'img/full_crop.png';
 v.setInterval(function(){
     n=+(new g);a.clearRect(0,0,t,u);d("#FFA",H,250,150);d("#000",270,320,h);a.drawImage(w,0,u-H,t,H);
     a.drawImage(image, c.width /2 - (image.width * 1/2) / 2 , c.height / 2 - (image.height * 1/2) / 2, (image.width * 1/2), (image.height * 1/2));
